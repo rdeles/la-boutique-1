@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>La Boutique Cass&eacute;e</title>
+	<link rel="stylesheet" href="rdel225.css">
+	<script src="rdel225.js"></script>
+	<script>
+		var currentTab = "";
+		window.onload = registerTab;
+	</script>
+</head>
+
+<body>
+	<header id="title"><img class="logo" src="http://redsox.uoa.auckland.ac.nz/BC/Open/Service.svc/logo">&ensp;La Boutique Cass&eacute;e</header>
+	<p>&ensp;&ensp;La Boutique Cass&eacute;e is an online shop selling books and blurays.</p>
+	<br>
+	
+	<h2>
+		<table id="tabTable">
+			<tr>
+				<td id="registerTab" class="center" onclick="registerTab();">
+					Register
+				</td>
+				<td id="blurayTab" class="center" onclick="blurayTab();">
+					Blurays
+				</td>
+				<td id="bookTab" class="center" onclick="bookTab();">
+					Books
+				</td>
+				<td id="commentTab" class="center" onclick="commentTab();">
+					Comment
+				</td>
+			</tr>
+		</table>
+		<hr />
+		<hr />
+	</h2>
+   
+	<div id="bluraySec">
+		<section>
+			<input type="text" id="brSearch" placeholder="Search..." oninput="searchBlurays()"/>
+			<table id="blurayT"></table>
+		</section>
+	</div>
+	
+	<div id="bookSec">
+		<section>
+			<input type="text" id="bookSearch" placeholder="Search..." oninput="searchBooks()"/>
+			<table id="bookT"></table>
+		</section>
+	</div>
+	
+	<div id="registerSec">
+		<section>
+			<div id="reg1">
+				Register a username and password! Only registered users are able to purchase Blurays and Books from this site.<br><br><br>
+			</div>
+			
+			<div id="reg2">
+				<label>Username: </label><input type="text" id="regName" placeholder="Enter username"/><br><br>
+				<label>Password : </label><input type="password" id="regPwd" placeholder="Enter password"/><br><br>
+				<label>Address : </label><input type="text" id="regAdd" placeholder="Enter address"/><br><br>
+				<button onclick="register()">Register</button>
+			</div>
+		</section>
+	</div>
+	
+	<div id="commentSec">
+		<section>
+			<section id="guestbook1">
+			Post a comment in the guestbook here.<br><br><br>
+			
+			<label>Name: </label><input type="text" id="comName" placeholder="Enter a name"/><br><br>
+			<label>Comment : </label><input type="text" id="comString" placeholder="Enter a comment"/><br><br>
+			<button onclick="comment()">Comment</button><br><br><br>
+			</section>
+			
+			<section id="guestbook2">
+			<label>Guestbook</label><br><br>
+			<iframe id="commentIFrame" src="http://redsox.uoa.auckland.ac.nz/BC/Open/Service.svc/htmlcomments"></iframe>
+			<br><br>
+			</section>
+		</section>
+	</div>
+	
+</body>
+</html>

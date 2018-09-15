@@ -1,0 +1,83 @@
+.logo{
+	max-width:5%;
+	max-height:5%;
+	float: left;
+}
+
+label{
+    display:inline-block;
+    width:100px;
+}
+
+#title{
+	color:#0066FF;
+	font-size: 30px;
+	padding-top: 10px;
+}
+
+p {
+	color:#0066FF;
+}
+
+.center {
+	color:#0066FF;
+	text-align: center;
+}
+
+#tabTable{
+	width: 100%;
+}
+
+#blurayT, #bookT{
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	text-align: center;
+	padding-top: 15px;
+}
+
+section > section{
+	float: left;
+}
+
+#brSearch, #bookSearch{
+	width: 60%;
+	margin-left: 20%;
+	margin-right: 20%;
+	padding-top: 5px;
+}
+
+#reg1{
+	margin-top: 20px;
+	text-align: center;
+}
+
+#reg2{
+	width: 30%;
+	margin-left: 35%;
+	margin-right: 35%;
+}
+
+#guestbook1{
+	margin-top: 5%;
+	margin-left: 10%;
+}
+
+#guestbook2{
+	text-align: center;
+	font-weight: bold;
+	margin-left: 100px;
+	margin-right: 10%;
+}
+
+iframe{
+	width: 600px;
+	height: 300px;
+}
+
+.tableTitle{
+	font-weight: bold;
+	font-size: 20px;
+	padding-bottom: 20px;
+	background-color: lightBlue;
+}
